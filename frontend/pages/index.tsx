@@ -1,16 +1,18 @@
-import Head from 'next/head';
+import Layout from '@/components/layout'
+import Navbar from '@/components/organisms/Navbar'
+import ProductList from './products'
 
 export default function Home() {
 	return (
 		<>
-			<Head>
-				<title>Home</title>
-				<meta
-					name='viewport'
-					content='width=device-width, initial-scale=1'
-				/>
-			</Head>
-			<main></main>
+			<Layout pageTitle='Home'>
+				<div className='flex flex-col'>
+					<Navbar />
+					<div className='p-4'>
+						<ProductList />
+					</div>
+				</div>
+			</Layout>
 		</>
-	);
+	)
 }
