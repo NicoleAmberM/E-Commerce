@@ -12,4 +12,4 @@ class ProductSerializer(serializers.ModelSerializer):
 
     def get_category(self, obj):
         category = Category.objects.get(pk=obj.category_id)
-        return category.name
+        return {"name": category.name, "slug": category.slug}
