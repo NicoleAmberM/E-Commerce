@@ -1,5 +1,6 @@
 ## Environments
 venv/
+.env
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -11,3 +12,6 @@ __pycache__/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+
+# Pip freeze
+requirements.txt

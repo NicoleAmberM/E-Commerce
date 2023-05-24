@@ -1,0 +1,144 @@
+[
+  {
+    "model": "app.Category",
+    "pk": 1,
+    "fields": {
+      "name": "Cakes",
+      "slug": "cakes"
+    }
+  },
+  {
+    "model": "app.Category",
+    "pk": 2,
+    "fields": {
+      "name": "Pastries",
+      "slug": "pastries"
+    }
+  },
+  {
+    "model": "app.Category",
+    "pk": 3,
+    "fields": {
+      "name": "Cookies",
+      "slug": "cookies"
+    }
+  },
+  {
+    "model": "app.Category",
+    "pk": 4,
+    "fields": {
+      "name": "Loaves and Bars",
+      "slug": "loaves-and-bars"
+    }
+  },
+  {
+    "model": "app.Product",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "name": "Blueberry Cheesecake",
+      "slug": "blueberry-cheesecake",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "price": 500.00
+    }
+  },
+  {
+    "model": "app.Product",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "name": "Red Velvet Cake",
+      "slug": "red-velvet-cake",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "price": 600.00
+    }
+  },
+  {
+    "model": "app.Product",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "name": "Moist Chocolate Cake",
+      "slug": "moist-chocolate-cake",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "price": 450.00
+    }
+  },
+  {
+    "model": "app.Product",
+    "pk": 4,
+    "fields": {
+      "category": 1,
+      "name": "Sans Rival Cake",
+      "slug": "sans-rival-cake",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "price": 700.00
+    }
+  },
+  {
+    "model": "app.Product",
+    "pk": 5,
+    "fields": {
+      "category": 1,
+      "name": "Strawberry Shortcake",
+      "slug": "strawberry-shortcake",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "price": 800.00
+    }
+  },
+  {
+    "model": "app.Product",
+    "pk": 6,
+    "fields": {
+      "category": 2,
+      "name": "Plain Croissant",
+      "slug": "plain-croissant",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "price": 120.00
+    }
+  },
+  {
+    "model": "app.Product",
+    "pk": 7,
+    "fields": {
+      "category": 2,
+      "name": "Ube Ensaymada",
+      "slug": "ube-ensaymada",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "price": 100.00
+    }
+  },
+  {
+    "model": "app.Product",
+    "pk": 8,
+    "fields": {
+      "category": 3,
+      "name": "Oatmeal Cookies",
+      "slug": "oatmeal-cookies",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "price": 200.00
+    }
+  },
+  {
+    "model": "app.Product",
+    "pk": 9,
+    "fields": {
+      "category": 3,
+      "name": "Chocolate Crinkles",
+      "slug": "chocolate-crinkles",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "price": 200.00
+    }
+  },
+  {
+    "model": "app.Product",
+    "pk": 10,
+    "fields": {
+      "category": 4,
+      "name": "Banana Loaf",
+      "slug": "banana-loaf",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "price": 200.00
+    }
+  }
+]
