@@ -1,8 +1,8 @@
 # E-Commerce
 
 ## Techstack 
-React
-Next.js
-Typescript
-Python
-Django
+- React
+- Next.js
+- Typescript
+- Python
+- Django
