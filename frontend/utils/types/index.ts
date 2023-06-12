@@ -15,19 +15,19 @@ export interface UserType {
 }
 
 export interface CategoryType {
-  id: number
-  name: string
+	id: number
+	name: string
+	slug: string
 }
 
 export interface ProductType {
-  id: number
+	id: number
+	category: CategoryType
 	name: string
 	slug: string
-  category: string
-  categorySlug: string
-	price: number
 	description: string
-  ratings: RatingType[]
+	price: number
+  ratings: number
 }
 
 export interface RatingType {
