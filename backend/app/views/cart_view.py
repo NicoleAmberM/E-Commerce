@@ -4,23 +4,30 @@ from app.models.product import Product
 from app.models.user import User
 from app.serializers.cart_serializer import CartSerializer
 from rest_framework import generics, status
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 
 class AddToCartView(generics.CreateAPIView):
     queryset = Cart.objects.all()
     serializer_class = CartSerializer
+    permission_classes = [IsAuthenticated]
 
     def create(self, request, *args, **kwargs):
         # check if user is authenticated
-        # user = request.user
-        # if not user:
-        #   return Response({"error": "Unauthenticated"}, status=status.HTTP_403_FORBIDDEN)
+        user = request.user
+        if not user:
+            return Response(
+                {"error": "Unauthenticated. Log in to purchase."},
+                status=status.HTTP_403_FORBIDDEN,
+            )
 
         # check if user is a customer (role)
-
-        # temporary user
-        user = User.objects.get(pk=1)
+        if user.role.name != "Customer":
+            return Response(
+                {"error": "Unauthorized. Only customers can purchase."},
+                status=status.HTTP_403_FORBIDDEN,
+            )
 
         # check if user has a cart
         try:
