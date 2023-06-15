@@ -2,9 +2,11 @@ from app.models.product import Product
 from app.serializers.product_serializer import ProductSerializer
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, generics
+from rest_framework.permissions import IsAuthenticated
 
 
 class ProductList(generics.ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter]
