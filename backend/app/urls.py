@@ -1,4 +1,5 @@
 from app.views.auth_view import LoginView, LogoutView, RegisterView
+from app.views.cart_view import AddToCartView
 from app.views.product_view import ProductDetail, ProductList
 from django.urls import path
 
@@ -8,4 +9,5 @@ urlpatterns = [
     path("logout/", LogoutView.as_view(), name="logout"),
     path("products/", ProductList.as_view()),
     path("products/<slug:slug>", ProductDetail.as_view()),
+    path("cart/", AddToCartView.as_view()),
 ]

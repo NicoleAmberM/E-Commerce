@@ -1,0 +1,23 @@
+[
+  {
+    "model": "app.Role",
+    "pk": 1,
+    "fields": {
+      "name": "Customer"
+    }
+  },
+  {
+    "model": "app.Role",
+    "pk": 2,
+    "fields": {
+      "name": "Employee"
+    }
+  },
+  {
+    "model": "app.Role",
+    "pk": 3,
+    "fields": {
+      "name": "Admin"
+    }
+  }
+]

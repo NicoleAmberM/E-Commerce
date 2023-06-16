@@ -11,7 +11,7 @@ class User(AbstractUser):
         db_table = "app_users"
 
     role = models.ForeignKey(
-        Role, on_delete=models.CASCADE, related_name="users", null=True
+        Role, on_delete=models.CASCADE, related_name="users", default=1
     )
     first_name = models.CharField(max_length=255, validators=[MinLengthValidator(2)])
     last_name = models.CharField(max_length=255, validators=[MinLengthValidator(2)])
